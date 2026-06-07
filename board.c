@@ -1,17 +1,19 @@
 #include <stdio.h>
 #include "board.h"
 
-void display_board(char board [3][3])
+void display_board(char board [GRID_S][GRID_S])
 {
-    int i = 0, j = 0;
-
-    for (int i = 0; i < 3; i++)
+    printf("+---+---+---+");
+    for (int i = 0; i < GRID_S; i++)
     {
         printf("\n");
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < GRID_S; j++)
         {
-            printf(" | %c | ", board[i][j]);
+            printf("| %c ", board[i][j]);
         }
+        printf("|");
         printf("\n");
+        printf("+---+---+---+");
     }
+    printf("\n");
 }

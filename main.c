@@ -4,7 +4,7 @@
 
 int main ()
 {
-    char board[3][3] = {{'_', '_', '_'},{'_', '_', '_'},{'_', '_', '_'}};
+    char board[GRID_S][GRID_S] = {{'_', '_', '_'},{'_', '_', '_'},{'_', '_', '_'}};
     display_board(board);
 
     return 0;
